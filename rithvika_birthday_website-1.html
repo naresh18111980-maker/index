@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160b2b">
+<title>Happy Birthday, Rithvika 💗</title>
+<style>
+  :root{
+    --pink:#ff7eb6; --hot:#ff3d8d; --lav:#bda2ff; --cream:#fff3fa;
+    --glass:rgba(255,255,255,.09); --line:rgba(255,255,255,.18);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; min-height:100vh; overflow-x:hidden; color:var(--cream);
+    font-family: ui-rounded, "Trebuchet MS", system-ui, sans-serif;
+    background:
+      radial-gradient(ellipse at 15% 15%,rgba(128,67,203,.32),transparent 35%),
+      radial-gradient(ellipse at 85% 70%,rgba(255,61,141,.17),transparent 38%),
+      linear-gradient(145deg,#090615 0%,#1a0c31 48%,#10091f 100%);
+  }
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; opacity:.45;
+    background-image:radial-gradient(white .7px,transparent .8px);
+    background-size:43px 43px; animation:starDrift 35s linear infinite;
+  }
+  @keyframes starDrift{to{background-position:180px 240px}}
+  .aurora{position:fixed; width:50vw;height:50vw;max-width:650px;max-height:650px;
+    border-radius:50%;filter:blur(85px);opacity:.18;pointer-events:none;z-index:0}
+  .aurora.one{background:#9c46ff;top:-22%;left:-18%}
+  .aurora.two{background:#ff388c;right:-22%;bottom:-22%}
+  main{position:relative;z-index:1;width:min(100% - 28px,900px);margin:auto;padding:35px 0 70px}
+  .topline{text-align:center;letter-spacing:.25em;text-transform:uppercase;font-size:.7rem;color:#d6c4ff}
+  h1{font-size:clamp(2.5rem,9vw,5.6rem);line-height:.98;text-align:center;margin:18px 0 12px;
+    letter-spacing:-.055em;text-shadow:0 0 28px rgba(255,126,182,.36)}
+  h1 span{display:block;background:linear-gradient(90deg,#fff1f8,#ff85bd,#c6aaff);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .subtitle{text-align:center;color:#dfd2f5;max-width:570px;margin:0 auto 24px;line-height:1.7}
+  .badge{display:table;margin:0 auto;border:1px solid var(--line);background:var(--glass);
+    border-radius:999px;padding:9px 15px;font-size:.82rem;backdrop-filter:blur(14px)}
+  .stage{display:grid;place-items:center;min-height:340px;perspective:1000px;position:relative}
+  .orbit{position:absolute;border:1px solid rgba(255,173,218,.25);border-radius:50%;
+    width:280px;height:100px;transform:rotate(-25deg);animation:orbit 12s linear infinite}
+  .orbit.two{width:330px;height:130px;transform:rotate(35deg);animation-duration:17s;border-color:rgba(190,160,255,.24)}
+  .orbit::after{content:"✦";position:absolute;top:3px;left:20%;color:#ffd4ea;text-shadow:0 0 15px #ff83c0}
+  @keyframes orbit{to{rotate:360deg}}
+  .heart-wrap{position:relative;width:150px;height:150px;display:grid;place-items:center;
+    transform-style:preserve-3d;animation:float 4s ease-in-out infinite;filter:drop-shadow(0 15px 25px rgba(255,48,133,.28))}
+  .heart{position:relative;width:92px;height:92px;background:linear-gradient(145deg,#ffb5d5,#ff3f91 58%,#b80e68);
+    transform:rotate(-45deg);border-radius:12px;box-shadow:inset 8px 7px 15px rgba(255,255,255,.45),inset -9px -10px 18px rgba(105,0,55,.3),0 0 45px rgba(255,66,150,.5)}
+  .heart::before,.heart::after{content:"";position:absolute;width:92px;height:92px;border-radius:50%;
+    background:linear-gradient(145deg,#ffc8e0,#ff4d9b 62%,#c01570)}
+  .heart::before{top:-46px;left:0}
+  .heart::after{top:0;left:46px}
+  .heart-core{position:absolute;z-index:2;font-size:2rem;transform:translateZ(55px);text-shadow:0 0 16px white}
+  @keyframes float{0%,100%{transform:translateY(0) rotateX(7deg) rotateY(-8deg)}50%{transform:translateY(-14px) rotateX(-5deg) rotateY(8deg)}}
+  .spark{position:absolute;color:#ffe1f0;animation:twinkle 2s ease-in-out infinite}
+  .spark.s1{top:28px;left:15%;font-size:1.4rem}.spark.s2{right:13%;top:65px;animation-delay:.6s}
+  .spark.s3{bottom:35px;left:23%;animation-delay:1s}
+  @keyframes twinkle{0%,100%{opacity:.35;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}
+  .panel{background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.035));
+    border:1px solid var(--line);border-radius:26px;padding:23px;margin:18px 0;
+    box-shadow:0 18px 55px rgba(0,0,0,.2);backdrop-filter:blur(16px)}
+  .panel h2{margin:0 0 9px;font-size:1.35rem}
+  .muted{color:#d6c8e8;line-height:1.65}
+  .action-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0}
+  button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:13px 19px;transition:transform .2s,filter .2s}
+  button:hover{transform:translateY(-2px);filter:brightness(1.08)}
+  button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+  .primary{color:#39102b;font-weight:800;background:linear-gradient(100deg,#ffc1df,#ff7db5)}
+  .secondary{color:#fff;background:rgba(255,255,255,.09);border:1px solid var(--line)}
+  .gift-area{text-align:center;padding-top:6px}
+  .gift-button{background:none;padding:0;border-radius:20px;display:inline-grid;place-items:center}
+  .gift{position:relative;width:120px;height:90px;margin:30px auto 12px;filter:drop-shadow(0 15px 16px rgba(0,0,0,.3));transition:transform .4s}
+  .gift-button:hover .gift{transform:rotateY(12deg) rotateX(8deg) translateY(-5px)}
+  .gift-box{position:absolute;bottom:0;left:5px;width:110px;height:65px;border-radius:5px 5px 12px 12px;
+    background:linear-gradient(110deg,#ff4f9c,#c61d75);box-shadow:inset -10px 0 15px #8e1559}
+  .gift-lid{position:absolute;top:14px;left:0;width:120px;height:23px;border-radius:5px;
+    background:linear-gradient(110deg,#ff9cc8,#ff3d8d);transform:translateY(0);transition:transform .6s;z-index:2}
+  .gift-ribbon{position:absolute;left:51px;top:16px;width:18px;height:73px;background:linear-gradient(90deg,#ffe8a6,#fff2cb,#e8ae48);z-index:3}
+  .bow{position:absolute;top:0;left:45px;width:30px;height:18px;border:7px solid #ffe6a0;border-radius:50% 50% 10% 50%;transform:rotate(22deg);z-index:4}
+  .bow::after{content:"";position:absolute;width:30px;height:18px;border:7px solid #ffe6a0;border-radius:50% 50% 50% 10%;left:4px;top:-8px;transform:rotate(85deg)}
+  .gift.open .gift-lid{transform:translateY(-43px) rotate(-12deg)}
+  .gift.open{animation:giftPop .6s ease}
+  @keyframes giftPop{50%{transform:scale(1.12)}}
+  .hidden-message{display:none;margin:14px auto 0;max-width:520px;padding:15px;border-radius:18px;background:rgba(255,126,182,.1);border:1px solid rgba(255,126,182,.25)}
+  .hidden-message.show{display:block;animation:appear .5s ease}
+  @keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  .cake{position:relative;width:130px;height:94px;margin:25px auto 14px}
+  .cake-base{position:absolute;bottom:0;left:8px;width:114px;height:55px;border-radius:8px 8px 14px 14px;
+    background:linear-gradient(90deg,#ff9bc9,#fff0f7 48%,#ff8dbd);box-shadow:inset -8px -8px 0 rgba(206,52,126,.13)}
+  .cake-top{position:absolute;bottom:45px;left:8px;width:114px;height:24px;border-radius:50%;
+    background:linear-gradient(90deg,#ffe7f2,#fff,#ffc6df);border-bottom:4px dotted #ff69a7}
+  .icing{position:absolute;bottom:30px;left:8px;width:114px;height:22px;background:#ffb6d7;border-radius:0 0 8px 8px}
+  .candle{position:absolute;bottom:67px;left:59px;width:12px;height:32px;border-radius:3px;background:repeating-linear-gradient(45deg,#fff 0 5px,#c3a2ff 5px 10px)}
+  .flame{position:absolute;left:58px;bottom:98px;width:15px;height:22px;background:radial-gradient(ellipse at 50% 65%,#fff7bd 0 20%,#ffb73e 45%,#ff6b4d 70%,transparent 72%);
+    filter:drop-shadow(0 0 9px #ffb83e);border-radius:50% 50% 45% 45%;animation:flicker .7s infinite alternate}
+  @keyframes flicker{to{transform:rotate(7deg) scale(.85);opacity:.8}}
+  .letter-shell{max-width:700px;margin:22px auto}
+  .letter-cover{text-align:center;padding:30px 20px}
+  .envelope{font-size:3.5rem;filter:drop-shadow(0 8px 15px rgba(255,88,160,.25))}
+  .letter-paper{display:none;background:linear-gradient(135deg,#fff9fc,#ffeaf4);color:#52233f;border-radius:18px;padding:clamp(20px,5vw,38px);
+    box-shadow:0 20px 50px rgba(0,0,0,.25);line-height:1.85;white-space:pre-line}
+  .letter-paper.open{display:block;animation:appear .7s ease}
+  .letter-paper h2{color:#bd286d;text-align:center;margin-top:0}
+  .signature{text-align:right;color:#bd286d;font-weight:800}
+  .note{font-size:.84rem;color:#cdbddd;text-align:center;margin-top:12px}
+  footer{text-align:center;color:#bdaacb;font-size:.8rem;margin-top:35px}
+  .float-heart{position:fixed;bottom:-40px;z-index:5;pointer-events:none;animation:rise linear forwards;opacity:.85}
+  @keyframes rise{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+  .confetti{position:fixed;top:-15px;z-index:20;pointer-events:none;animation:confettiFall 3.2s linear forwards}
+  @keyframes confettiFall{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+  @media(min-width:700px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{margin:16px 0}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="aurora one"></div><div class="aurora two"></div>
+<main>
+  <div class="topline">A little universe made just for you ✦</div>
+  <h1>Happy Birthday <span>Rithvika 💗</span></h1>
+  <p class="subtitle">Today, the stars are showing off… but honestly, they still can't outshine the birthday girl.</p>
+  <div class="badge">🎂 Birthday mode: ACTIVATED · ✨ 1000× extra sparkle</div>
+
+  <section class="stage" aria-label="A glowing 3D-style heart surrounded by orbiting stars">
+    <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
+    <div class="orbit"></div><div class="orbit two"></div>
+    <div class="heart-wrap"><div class="heart"></div><div class="heart-core">💗</div></div>
+  </section>
+
+  <div class="action-row">
+    <button class="primary" id="celebrateBtn">Make a birthday wish ✨</button>
+    <button class="secondary" id="musicBtn" aria-pressed="false">♫ Turn on sparkle sounds</button>
+  </div>
+
+  <div class="grid">
+    <section class="panel gift-area">
+      <h2>🎁 A tiny surprise</h2>
+      <p class="muted">It's not a real present, but it comes with unlimited birthday sparkle.</p>
+      <button class="gift-button" id="giftBtn" aria-label="Open the birthday gift">
+        <div class="gift" id="gift"><div class="gift-box"></div><div class="gift-lid"></div><div class="gift-ribbon"></div><div class="bow"></div></div>
+      </button>
+      <p class="muted">Tap the gift to open it!</p>
+      <div class="hidden-message" id="giftMessage">💌 Surprise! You deserve a day full of laughter, good memories, cake, and all the happiness you give to others. 🌷</div>
+    </section>
+
+    <section class="panel" style="text-align:center">
+      <h2>🧁 Birthday cake</h2>
+      <p class="muted">One candle, one wish, and a whole galaxy of good things ahead.</p>
+      <div class="cake" aria-label="Animated birthday cake">
+        <div class="cake-base"></div><div class="icing"></div><div class="cake-top"></div><div class="candle"></div><div class="flame" id="flame"></div>
+      </div>
+      <button class="primary" id="blowBtn">Blow out the candle 🌬️</button>
+      <p class="muted" id="cakeText">Make a wish before you tap!</p>
+    </section>
+  </div>
+
+  <section class="panel letter-shell">
+    <div class="letter-cover" id="letterCover">
+      <div class="envelope">💌</div>
+      <h2>A little letter for you</h2>
+      <p class="muted">The most honest part of this birthday surprise is inside.</p>
+      <button class="primary" id="openLetterBtn">Open my letter 💗</button>
+    </div>
+    <article class="letter-paper" id="letterPaper">
+      <h2>Dear Rithvika, 💕</h2>
+      <p>Hi Rithvika, happy birthday to you! I hope you will never forget this. 💕</p>
+      <p>Everyone has a special person in their life. For me, it's you. I will never forget when you asked me why I didn't wish you on your birthday. That moment affected me more than you might imagine, and I remembered it. It may sound crazy, but I still feel guilty about it.</p>
+      <p>You don't know how happy I am right now, knowing you're reading this. When I think about my future, you're someone I have imagined being part of it. I don't want a love that stays only for the happy moments. I want to care about someone through the difficult moments too. I would want to stand by you, whatever life brings. ❤️</p>
+      <p>I know you have a lot going on. You may be busy, preparing for NEET, focusing on your future, and trying to be a role model for your brother. You have your own dreams and responsibilities, and I respect that. I never wanted to become another pressure in your life.</p>
+      <p>Even after you honestly rejected me, my feelings didn't disappear overnight. I continued to care about you, and I wanted to be honest about that. But I also understand that your feelings are your own, and I respect your answer.</p>
+      <p>I don't expect you to invest your emotions, attention, or make sacrifices for me. I don't want you to feel that you owe me anything. Even a simple reply to a little “Hi 🙂” would make me smile, but please don't feel obligated to reply. Your comfort and happiness matter too.</p>
+      <p>I will always wish the best for you and cheer you on from my corner. I once wanted to buy you a gift, but I didn't want to risk making your birthday uncomfortable. So, for now, this little message is my gift.</p>
+      <p>I guess this is what I wanted to confess to you today: you have been special to me, and I'm grateful that I got to know you. Whatever happens, I hope life gives you beautiful opportunities, success in your dreams, and countless reasons to smile. 🌸</p>
+      <p>Happy Birthday, girl. 🙂💕</p>
+      <p class="signature">With care, honesty, and the warmest birthday wishes. 💗</p>
+    </article>
+    <p class="note">A gentle reminder: this letter asks for nothing in return. Her comfort and her answer matter. 💗</p>
+  </section>
+
+  <footer>Made with a little courage, a lot of sparkle, and birthday wishes. ✨</footer>
+</main>
+<script>
+  const giftBtn = document.getElementById('giftBtn');
+  const gift = document.getElementById('gift');
+  const giftMessage = document.getElementById('giftMessage');
+  giftBtn.addEventListener('click', () => {
+    gift.classList.toggle('open');
+    giftMessage.classList.toggle('show');
+    if (giftMessage.classList.contains('show')) burstConfetti(45);
+  });
+
+  document.getElementById('openLetterBtn').addEventListener('click', () => {
+    document.getElementById('letterPaper').classList.add('open');
+    document.getElementById('letterCover').style.display = 'none';
+    burstConfetti(28);
+  });
+
+  document.getElementById('celebrateBtn').addEventListener('click', () => {
+    burstConfetti(90);
+    for (let i=0;i<18;i++) setTimeout(makeFloatingHeart, i*90);
+    document.getElementById('celebrateBtn').textContent = 'Wish sent to the universe ✨';
+  });
+
+  let candleOut = false;
+  document.getElementById('blowBtn').addEventListener('click', () => {
+    candleOut = !candleOut;
+    document.getElementById('flame').style.display = candleOut ? 'none' : 'block';
+    document.getElementById('cakeText').textContent = candleOut ? 'Wish made! May this year bring you lovely surprises. 💫' : 'Make a wish before you tap!';
+    document.getElementById('blowBtn').textContent = candleOut ? 'Relight candle 🕯️' : 'Blow out the candle 🌬️';
+    if (candleOut) burstConfetti(35);
+  });
+
+  function makeFloatingHeart(){
+    const el=document.createElement('div'); el.className='float-heart';
+    el.textContent=['💗','💕','💖','✨','🌸'][Math.floor(Math.random()*5)];
+    el.style.left=Math.random()*100+'vw';
+    el.style.fontSize=(14+Math.random()*22)+'px';
+    const duration=4+Math.random()*4; el.style.animationDuration=duration+'s';
+    document.body.appendChild(el); setTimeout(()=>el.remove(),duration*1000);
+  }
+  setInterval(()=>{if(Math.random()>.45)makeFloatingHeart()},900);
+
+  function burstConfetti(amount){
+    const pieces=['💖','✨','🌸','💕','✦','🎉'];
+    for(let i=0;i<amount;i++){
+      const el=document.createElement('span'); el.className='confetti';
+      el.textContent=pieces[Math.floor(Math.random()*pieces.length)];
+      el.style.left=Math.random()*100+'vw';
+      el.style.fontSize=(12+Math.random()*20)+'px';
+      el.style.animationDuration=(2+Math.random()*2)+'s';
+      el.style.animationDelay=(Math.random()*.4)+'s';
+      document.body.appendChild(el); setTimeout(()=>el.remove(),4500);
+    }
+  }
+
+  // Optional gentle synthesized sparkle notes; no audio file or download needed.
+  let audioCtx=null, soundOn=false, soundTimer=null;
+  const musicBtn=document.getElementById('musicBtn');
+  function playNote(freq, start, duration, volume=.035){
+    if(!audioCtx)return;
+    const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+    osc.type='sine'; osc.frequency.value=freq;
+    gain.gain.setValueAtTime(0,audioCtx.currentTime+start);
+    gain.gain.linearRampToValueAtTime(volume,audioCtx.currentTime+start+.03);
+    gain.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+start+duration);
+    osc.connect(gain);gain.connect(audioCtx.destination);
+    osc.start(audioCtx.currentTime+start);osc.stop(audioCtx.currentTime+start+duration+.05);
+  }
+  function melody(){
+    if(!soundOn)return;
+    [523.25,659.25,783.99,659.25,587.33,698.46,880,783.99].forEach((f,i)=>playNote(f,i*.22,.28));
+    soundTimer=setTimeout(melody,2300);
+  }
+  musicBtn.addEventListener('click',async()=>{
+    if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+    if(audioCtx.state==='suspended') await audioCtx.resume();
+    soundOn=!soundOn;
+    musicBtn.setAttribute('aria-pressed',String(soundOn));
+    musicBtn.textContent=soundOn?'♫ Turn off sparkle sounds':'♫ Turn on sparkle sounds';
+    if(soundOn)melody();else clearTimeout(soundTimer);
+  });
+</script>
+</body>
+</html>
